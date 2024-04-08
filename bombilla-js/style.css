@@ -1,0 +1,60 @@
+
+body{
+    background-color: silver;
+}
+.container{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+#btn{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+
+   
+}
+#img{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+
+
+}
+#btn1{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+
+   
+}
+#btn2{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    visibility: hidden;
+
+   
+}
+#img1{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+ 
+
+}
+.imgtra{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    opacity: 100;
+
+}
+
+.hid{
+
+visibility: hidden;
+
+}

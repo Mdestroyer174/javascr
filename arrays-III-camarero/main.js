@@ -1,11 +1,11 @@
 // --------------------------------------------------------------------
 
-// const comida = [];
+ //const comida = [];
 
-//     comida.push("🍔", "🌭", "🍟", "🍟"); 
+ //   comida.push("🍔", "🌭", "🍟", "🍟"); 
 //     comida.splice(4, 2, "🧋", "🧋");
 
-// console.log(comida);
+ //console.log(comida);
 
 
 // --------------------------------------------------------------------
@@ -107,29 +107,27 @@ const drinksConsumed = [
     { nombre: 'Bob', bebida: '🍺', hora: '04:15:00' },
     { nombre: 'Charlie', bebida: '🍸', hora: '05:00:00' },
   ];
+  
+drinksConsumed.forEach(element => {
+	// console.log(drinksConsumed.indexOf(element));
+	if (drinksConsumed.indexOf(element) <= 0) {
+		console.log(element.nombre + ' es la primera en meterse un copazo de:' + element.bebida + ' ' + drinksConsumed.indexOf(element) );
+		
+	}else if (drinksConsumed.indexOf(element) === 4){
+		
+		console.log(element.nombre + ' se ha cascao un cubatilla de: ' + element.bebida +  ' ' + drinksConsumed.indexOf(element));
+		// console.log('no hay nadie que se haya bebido eso');
+   
+	} else if (drinksConsumed.lastIndexOf(element) === 8){
+		console.log('el sujeto en cuestion: ' + element.nombre + ' se ha cascao un chupinazo de: ' + element.bebida + ' a las: ' + element.hora + ' ' +  drinksConsumed.lastIndexOf(element) );
 
-function findFirstOccurrenceIndexAndPerson(array, targetDrink) {
-	// Find the first occurrence of targetDrink using indexOf
-	const firstOccurrenceIndex = array
-		.map((item) => item.bebida)
-		.indexOf(targetDrink);
-
-	if (firstOccurrenceIndex !== -1) {
-		const personName = array[firstOccurrenceIndex].nombre;
-		console.log(
-			`First occurrence of ${targetDrink} found by ${personName} at index: ${firstOccurrenceIndex}`
-		);
-	} else {
-		console.log(`${targetDrink} not found in the array.`);
+	} else{
+	
 	}
-}
-
-
-
-// Usage of the function with the drinksConsumed array and targetDrink '🍹'
-findFirstOccurrenceIndexAndPerson(drinksConsumed, "🍹");
-findFirstOccurrenceIndexAndPerson(drinksConsumed, "🥂");
-findFirstOccurrenceIndexAndPerson(drinksConsumed, "☕");
+	
+	}
+	
+);
 
 
 

@@ -1,0 +1,14 @@
+#cambio{
+    width: 100px;
+    height: 40px;
+    border: solid black 2px;
+    border-radius: 5px;
+
+}
+
+.rojo{
+    color: red;
+    }
+.azul{
+    color: blue;
+    }

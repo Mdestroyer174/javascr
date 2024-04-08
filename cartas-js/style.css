@@ -1,0 +1,19 @@
+.atras{
+width: 400px;
+height: 600px;
+margin-left: 40px;
+margin-top: 20px;
+}
+.delante{
+    width: 400px;
+    height: 600px;
+    margin-left: 40px;
+    margin-top: 20px;
+    display: none;
+    }
+
+.atras:hover + .delante {
+        display: inline-block;
+
+      }
+
