@@ -1,6 +1,6 @@
 
 body{
-    background-color: silver;
+    background-color: black;
 }
 .container{
 
@@ -18,8 +18,10 @@ align-items: center;
 }
 #img{
     position: absolute;
+    margin-top: 50px;
     width: 500px;
     height: 600px;
+    transition: transform .2s;
 
 
 }
@@ -39,17 +41,21 @@ align-items: center;
    
 }
 #img1{
+    margin-top: 50px;
     position: absolute;
     width: 500px;
     height: 600px;
+    transition: transform .2s;
  
 
 }
-.imgtra{
+#imgtra{
+    margin-top: 50px;
     position: absolute;
     width: 500px;
     height: 600px;
-    opacity: 100;
+    transition: transform .2s;
+    opacity: 0;
 
 }
 
@@ -58,3 +64,17 @@ align-items: center;
 visibility: hidden;
 
 }
+
+
+#img:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  #img1:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  #imgtra:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+

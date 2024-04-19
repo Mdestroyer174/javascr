@@ -1,33 +1,28 @@
-//const btn = document.querySelector("#btn2");
-//const img = document.querySelector("#img");
-//const btnoff = document.querySelector("#btn");
+
 const opa = document.querySelector("#img1");
 
-//btn.onclick = function(){
-    
-//btnoff.ClassList.toggle("hid");
-//img.ClassList.toggle("hid");
+document.getElementById("button").onclick = function(){
+    var curr_value = document.getElementById('photo').style.transform;
+    var new_value = "rotate(30deg)";
+    if(curr_value !== ""){
+        var new_rotate = parseInt(curr_value.replace("rotate(","").replace(")","")) + 30;
+        new_value = "rotate(" + new_rotate + "deg)";
 
-//}
-
-//document.addEventListener("click", load);
+    }
+    document.getElementById('photo').style.transform = new_value;
+};
 
 $("#btn").click(() => $("#img , #btn").toggle());
+
 $("#btn1").click(() => $("#img , #btn").toggle());
 
 
-// $().ready(() => {
-//     $("#btn").click(function() {
-        
-//     ("#btn").click(() => $("#img").show());
-
-
-//     });
-// });
-
 $('#bgopacity').on('input', function (value) {
-    $('.imgtra').css({
+    $('#imgtra').css({
         opacity: $(this).val() * '.01'
     });
 });
+
+
+
 
