@@ -13,10 +13,92 @@ body, html {
     animation:walk 1.5s steps(6) infinite;
     -webkit-animation:walk 1.5s steps(6) infinite;
 }
+.bub{
+  position: absolute;
+    margin-left: 700px;
+    background: url('./assets/bubwalk2.png') repeat-x;
+    width: 60px;
+    height: 57px;
+    animation:walk 1.5s steps(6) infinite;
+    -webkit-animation:walk 1.5s steps(6) infinite;
+}
+
+#bubf{
+    position: absolute;
+    margin-left: 700px;
+    background: url('./assets/bubf2.png') repeat-x;
+    width: 69px;
+    height: 91px;
+    animation:walkf 1s steps(4) infinite reverse;
+    -webkit-animation:walkf 1s steps(4) infinite reverse;
+}
+
+.bubf{
+  position: absolute;
+  margin-left: 700px;
+  background: url('./assets/bubf2.png') repeat-x;
+  width: 69px;
+  height: 91px;
+  animation:walkf 1s steps(4) infinite reverse;
+  -webkit-animation:walkf 1s steps(4) infinite reverse;
+}
+
+#bubh{
+  position: absolute;
+  margin-left: 700px;
+  background: url('./assets/bubh2.png')repeat-x;
+  width: 70px;
+  height: 74px;
+  padding-left: 0.5px;
+  animation:walkh 1.5s steps(5) infinite ;
+  -webkit-animation:walkh 1.5s steps(5) infinite ;
+}
+
+.bubh{
+  position: absolute;
+  margin-left: 700px;
+  background: url('./assets/bubh2.png')repeat-x;
+  width: 70px;
+  height: 74px;
+  /* animation:walkh 1.5s steps(5) infinite ;
+  -webkit-animation:walkh 1.5s steps(5) infinite ; */
+}
+#bube{
+  position: absolute;
+  margin-left: 700px;
+  background: url('./assets/bube2.png')repeat-x;
+  width: 74px;
+  height: 72px;
+  padding-left: 0.5px;
+  animation:walke 2s steps(8) infinite reverse;
+  -webkit-animation:walke 2s steps(8) infinite reverse;
+}
+
+.bube{
+  position: absolute;
+  margin-left: 700px;
+  background: url('./assets/bube2.png')repeat-x;
+  width: 74px;
+  height: 72px;
+  /* animation:walke 1.5s steps(5) infinite ;
+  -webkit-animation:walke 1.5s steps(5) infinite ; */
+}
 
 @keyframes walk {
     0% { background-position:0 }
     100% { background-position:-360px }
+  }
+  @keyframes walkf {
+    0% { background-position:0 }
+    100% { background-position:315px }
+  }
+  @keyframes walkh {
+    0% { background-position:0 }
+    100% { background-position:390px }
+  }
+  @keyframes walke {
+    0% { background-position:0 }
+    100% { background-position:-626px }
   }
   @keyframes lay1 {
     0% { background-position:272px }
@@ -70,7 +152,7 @@ body, html {
             height: 100vh;
             margin: auto;
             animation:lay3 20s linear infinite;
-            animation-direction: alternate;
+            
           
 }
             #lay4{
@@ -106,23 +188,23 @@ body, html {
 
 @keyframes fillmax {
   0% {
-    width: 0%;
+    width: 0px;
     background: red;
   }
   25% {
-    width: 25%;
+    width: 100px;
     background: orange;
   }
   50% {
-    width: 50%;
+    width: 200px;
     background: yellow;
   }
    75% {
-    width: 75%;
+    width: 300px;
     background: green;
   }
   100% {
-    width: 95%;
+    width: 400px;
     background: blueviolet;
     
 } 
@@ -130,11 +212,19 @@ body, html {
 
 @keyframes fill25 {
   0% {
-    width: 0%;
+    width: 0px;
     background: red;
   }
   25% {
-    width: 25%;
+    width: 25px;
+    background: red;
+  }
+  75% {
+    width: 75px;
+    background: orange;
+  }
+  100% {
+    width: 100px;
     background: orange;
   }
 }
@@ -163,26 +253,42 @@ padding: 20px;
   
   .progress2 {
     position: absolute;
-    width: 0px;
+    width: 400px;
     height: 12px;
-    animation: fill 20s ease infinite;
+  }
+  .progress-bar3 {
+    position: absolute;
+    width: 400px;
+    height: 10px;
+    margin: 0;
+    padding: 8px;
+    background: white;
+    border-radius: 10px;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+  
+  .progress3 {
+    position: absolute;
+    width: 400px;
+    height: 12px;
   }
 
   .progressX25 {
     position: absolute;
     background: white;
-    width: 400px;
+    width: 100px;
     height: 12px;
-    animation: fillmax 5s ease forwards;
-    -webkit-animation: fillmax 5s ease forwards;
+    animation: fill25 5s ease forwards;
+
 }
 
 .progressmax {
   position: absolute;
   width: 400px;
   height: 12px;
-  animation: fillmax 15s linear forwards;
-  -webkit-animation: fillmax 20s ease infinite;
+  animation: fillmax 10s linear forwards;
+
 }
 
 
